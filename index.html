@@ -3,70 +3,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>E-Waste Recycling</title>
+
+    <style>
+        section{
+            padding: 60px 0;
+        }
+        .images{
+            height: 700px;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Header Section -->
-    <header>
+    <!-- <header>
         <h1>E-Waste Recycling Solutions</h1>
         <p>Your partner in sustainable technology disposal</p>
-    </header>
+    </header> -->
 
     <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#pickup">Pick-Up</a></li>
-            <li><a href="#map">Interactive Map</a></li>
-            <li><a href="#process">Recycling Process</a></li>
-            <li><a href="#educational">Educational Resources</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+        <div class="container-xxl">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="#intro">
+            <span class="fw-bold h3">
+                E-Waste Recycling Solutions
+            </span>
+          </a>
+          <!-- toggle button for mobile nav -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pickup">Pick-Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#map">Interactive Map</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#process">Recycling Process</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#educational">Educational Resources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
 
     <!-- Main Content Section -->
     <main>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img-fluid images" src="https://images.unsplash.com/photo-1495556650867-99590cea3657?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid images" src="https://images.unsplash.com/photo-1526951521990-620dc14c214b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid images" src="https://images.unsplash.com/photo-1567093321629-c23611f44d52?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <!-- Services Section -->
         <section id="services">
-            <h2>Our Services</h2>
-            <p>Explore our comprehensive e-waste recycling services.</p>
             <!-- Include more content and visuals here -->
+            <div class="container text-center display-5">Our Services</div>
+            <div class="mt-5 container-lg ">
+                <div class="row justify-content-around">
+                    <div class="card" style="width: 18rem;">
+                        <img class="mt-3" src="https://media.istockphoto.com/id/484189251/photo/back-where-you-belong.jpg?s=2048x2048&w=is&k=20&c=RE-8AKBn6p8l656SPibSu1PJiFyK3M69YXHbUtEhHs0=" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Collection of Waste</h5>
+                          <p class="card-text">
+                            Household waste in economically developed countries will generally be left in waste containers or recycling bins prior to collection by a waste collector using a waste collection vehicle. </p>
+                          <a href="#pickup" class="btn btn-primary">view more</a>
+                        </div>
+                      </div>
+                    <div class="card" style="width: 18rem;">
+                        <img  class="mt-3" src="https://images.unsplash.com/photo-1510251197878-a2e6d2cb590c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Disposal of solid waste</h5>
+                          <p class="card-text">The conventional landfill, incineration, composting, and ways of handeling solid wastes are common as mature technologies for waste disposal. </p>
+                          <a href="#pickup" class="btn btn-primary">view more</a>
+                        </div>
+                      </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="mt-3" src="https://images.unsplash.com/photo-1582980752625-10783b273e2d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Pollution Control</h5>
+                          <p class="card-text">Pollution control is the limitation or eradication of the release of harmful substances into the environment. The removal of dangerous substances can be considered pollutant control as well.</p>
+                          <a href="#pickup" class="btn btn-primary">view more</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
         </section>
 
         <!-- Pick-Up Request Form -->
-        <section id="pickup">
-            <h2>Pick-Up Request</h2>
-            <form action="#" method="POST">
-                <!-- Include form fields and submit button -->
-            </form>
+        <section id="pickup" class= "bg-light">
+            <div class="container text-center display-5">Pick-Up Request</div>
+            <div class="container p-5">
+                
+                    
+              <div class="row">
+                <div class="col m-3  d-none d-md-block">
+                  <img src="https://images.unsplash.com/photo-1612965110667-4175024b0dcc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="">
+                </div>
+                <div class="col m-3 container-fluid">
+                  <form action="#" method="POST" class="mt-2">
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                          <input type="text" id="form6Example1" class="form-control" />
+                          <label class="form-label" for="form6Example1">First name</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                          <input type="text" id="form6Example2" class="form-control" />
+                          <label class="form-label" for="form6Example2">Last name</label>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Text input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="text" id="form6Example3" class="form-control" />
+                      <label class="form-label" for="form6Example3">Company name</label>
+                    </div>
+                  
+                    <!-- Text input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="text" id="form6Example4" class="form-control" />
+                      <label class="form-label" for="form6Example4">Address</label>
+                    </div>
+                  
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="email" id="form6Example5" class="form-control" />
+                      <label class="form-label" for="form6Example5">Email</label>
+                    </div>
+                  
+                    <!-- Number input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="number" id="form6Example6" class="form-control" />
+                      <label class="form-label" for="form6Example6">Phone</label>
+                    </div>
+                  
+                    <!-- Message input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                      <label class="form-label" for="form6Example7">Additional information</label>
+                    </div>
+                  
+                   <!-- 
+                    <div class="form-check d-flex justify-content-center mb-4">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="form6Example8"
+                        checked
+                      />
+                      <label class="form-check-label" for="form6Example8"> Create an account? </label>
+                    </div> -->
+                  
+                    <!-- Submit button -->
+                    <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+                  </form>
+                </div>
+              </div>
+                
+            </div>
         </section>
+
 
         <!-- Interactive Map Section -->
         <section id="map">
-            <h2>Interactive Map</h2>
+            <div class="container text-center display-3">Interactive Map</div>
+            <div class="justify-content-center row p-5 mx-auto">
+              <div class="col-6 p-4 justify-content-center mt-5 my-2 col-md-4">
+                <h2 class="display-4  ">
+                  Location
+                </h2>
+                <p class="p-1">
+                  <h4 class="display-6">Address</h4>
+                </p>
+                <p>
+                  Shree Devi Institute of Technology, Kenjar, Mangalore
+                  Karnataka, India
+                </p>
+                <div class="row">
+                  <p class="col">
+                    <span class="d-block">Phone:</span>
+                    +91 9663918389
+                  </p>
+                  <p class="col">
+                    <span class="d-block">Phone:</span>
+                    +91 9663918389
+                  </p>
+                </div>
+              </div>
+             <div class="col-8 p-4 col-md-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d17458.204571219107!2d74.87193217244128!3d12.947964536390877!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d12.9508724!2d74.86787249999999!4m5!1s0x3ba350d45819abf1%3A0xec9cf13e2e0ad60c!2sShree%20Devi%20Institute%20Of%20Technology%2C%20Airport%20Road%2C%20Kenjar%2C%20Mangaluru%2C%20Karnataka%20574142!3m2!1d12.9521038!2d74.86993389999999!5e0!3m2!1sen!2sin!4v1704349850477!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+            </div>
             <!-- Include an interactive map (Google Maps, Leaflet, etc.) -->
         </section>
 
+
         <!-- Recycling Process Section -->
-        <section id="process">
-            <h2>Recycling Process</h2>
+        <section class="bg-light" id="process">
+            <div class="container text-center display-3">Recycling Process</div>
             <!-- Include visuals and descriptions of the recycling process -->
+            <div class="container">
+                <div class="mt-3 row justify-content-center">
+                    <img src="assets/wasteprocess.jpg" class="mt-3 container col-7" alt="...">
+                </div>
+            </div>
         </section>
 
         <!-- Educational Resources Section -->
         <section id="educational">
-            <h2>Educational Resources</h2>
+            <div class="container text-center display-3">Educational Resources</div>
             <!-- Include articles, guides, and infographics -->
+    <div class="mt-4 container">            
+      <div class="row">
+        <div class="col"><div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                E-Recycling Tips for 2024
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Recycling is an essential process that allows communities and businesses to reduce pollution, energy consumption, and waste in landfills. Learn more about how to start recycling in your own home.</div>
+            </div>
+          </div>
+          <div class="accordion-item mt-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Repair Advocates Request Rules for Manufacturers
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">This advocacy toolkit and guide, “My Waste, Our Wealth”, has been developed by UN-Habitat
+                to guide city authorities in sensitizing its community to waste management issues and in
+                promoting sustainable day-to-day practices that can support the county in improving waste
+                management in the long term. This advocacy toolkit and guide aims at fostering behavioural
+                change at the community level to achieve sustainable resource and municipal solid waste
+                management in cities. </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Reuse Old Electronics This Holiday Season
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Reducing what you waste and reusing items as much as possible is a great way to reduce your impact on the environment. From thinking differently about what you buy, to refilling water bottles or using bags for life, to composting at home - there are lots of ways to make a real difference.</div>
+            </div></div>
+      </div>
+      </div>
+    </div></div>
         </section>
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 E-Waste Recycling Solutions</p>
+    <footer class="bg-light">
+        <section class="">
+            <!-- Footer -->
+            <footer class="bg-body-tertiary text-center text-md-start">
+              <!-- Grid container -->
+              <div class="container p-4">
+                <!--Grid row-->
+                <div class="row justify-content-between">
+                  <!--Grid column-->
+                  <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">E - Waste Recycling Solutions</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                      molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                      aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                  </div>
+                  <!--Grid column-->
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">Links</h5>
+          
+                    <ul class="list-unstyled mt-2">
+                      <li>
+                        <a href="#services" class="text-body">services</a>
+                      </li>
+                      <li>
+                        <a href="#pickup" class="text-body">Pick Up</a>
+                      </li>
+                      <li>
+                        <a href="#map" class="text-body">Map</a>
+                      </li>
+                      <li>
+                        <a href="#process" class="text-body">Recycling Process</a>
+                      </li>
+                      <li>
+                        <a href="#educational" class="text-body">Educational</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Grid container -->
+          
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                &copy; 2024 E-Waste Recycling Solutions
+              </div>
+            </footer>
+            <!-- Footer -->
+          </section>
     </footer>
 
     <!-- JavaScript file -->
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
